@@ -1,0 +1,51 @@
+Wed Nov 01 19:32:29 2017
+Windows-7-6.1.7601-SP1
+Ren'Py 6.99.13.2919
+ 
+
+Bootstrap to the start of init.init took 0.06s
+Early init took 0.02s
+Loader init took 1.89s
+Loading error handling took 0.03s
+
+Full traceback:
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\bootstrap.py", line 305, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\main.py", line 365, in main
+    renpy.game.script.load_script()  # sets renpy.game.script.
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\script.py", line 265, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\script.py", line 756, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn)
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\script.py", line 448, in finish_load
+    node.early_execute()
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\ast.py", line 879, in early_execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/definitions.rpy", line 6, in <module>
+    import singleton
+ImportError: No module named singleton
+
+While running game code:
+  File "game/definitions.rpy", line 6, in <module>
+    import singleton
+ImportError: No module named singleton
+Traceback (most recent call last):
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\bootstrap.py", line 305, in bootstrap
+    renpy.main.main()
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\main.py", line 365, in main
+    renpy.game.script.load_script()  # sets renpy.game.script.
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\script.py", line 265, in load_script
+    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\script.py", line 756, in load_appropriate_file
+    self.finish_load(stmts, initcode, filename=lastfn)
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\script.py", line 448, in finish_load
+    node.early_execute()
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\ast.py", line 879, in early_execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Pathos\Downloads\renpy-6.99.13-sdk\renpy\python.py", line 1764, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/definitions.rpy", line 6, in <module>
+    import singleton
+ImportError: No module named singleton
