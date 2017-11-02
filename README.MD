@@ -1,3 +1,3 @@
 #Doki Doki Assets
 
-Just the (currently not working in Ren'py) assets decompiled from Doki Doki Literature Club.
+Just the assets decompiled from Doki Doki Literature Club, intended to be used as a backup template if modding it goes south for some reason, to save from having to redecompile it.
